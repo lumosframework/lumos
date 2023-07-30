@@ -1,7 +1,18 @@
 /* typography defaults */
-h1, h2, h3, h4, h5, h6, p { margin-top: 0; margin-bottom: 0; }
-[class*="fs0"], h1, [class*="fs1"], h2, [class*="fs2"], h3, [class*="fs3"], 
-h4, [class*="fs4"], h5, [class*="fs5"], h6, [class*="fs6"], p, [class*="fs7"]  {
+h1, h2, h3, h4, h5, h6, p { 
+  margin-top: 0;
+  margin-bottom: 0;
+}
+[class*="fs0"], 
+h1, [class*="fs1"], 
+h2, [class*="fs2"], 
+h3, [class*="fs3"], 
+h4, [class*="fs4"], 
+h5, [class*="fs5"], 
+h6, [class*="fs6"], 
+p, [class*="fs7"],
+[class*="fs8"],
+[class*="fs9"]  {
   font-size: inherit;
   font-family: inherit;
   font-weight: inherit;
