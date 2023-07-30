@@ -1,3 +1,10 @@
+/**
+ * Lumos Layout 1.0.0
+ * Copyright 2023 Timothy Ricks
+ * Released under the MIT License
+ * Released on: July 30, 2023
+*/
+
 * {
   --grid-column-gap: 0;
   grid-column-gap: var(--grid-column-gap);
