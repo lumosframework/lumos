@@ -1,8 +1,13 @@
 /* LAYOUT STYLES */
-/* grid */
+* {
+	--grid-column-gap: 0;
+  grid-column-gap: var(--grid-column-gap);
+	--grid-row-gap: 0;
+  grid-row-gap: var(--grid-row-gap);
+}
 [class*="gd1"] {
-  --grid-column-gap: var(--default-grid-gap);
-  --grid-row-gap: var(--default-grid-gap);
+  --grid-column-gap: var(--default-column-gap);
+  --grid-row-gap: var(--default-row-gap);
   --column-count: 1;
   display: grid;
   grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
