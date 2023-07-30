@@ -20,8 +20,13 @@ p, [class*="fs7"],
   letter-spacing: inherit;
   text-transform: inherit;
 }
-body { font-smoothing: antialiased; -webkit-font-smoothing: antialiased; }
-:is(h1, h2, h3, h4, h5, h6, p) a { text-decoration: underline; }
+body { 
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+:is(h1, h2, h3, h4, h5, h6, p) a { 
+  text-decoration: underline;
+}
 .w-richtext > *:first-child { margin-top: 0; }
 .w-richtext > *:last-child { margin-bottom: 0; }
 
