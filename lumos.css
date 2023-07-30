@@ -67,48 +67,48 @@ body,
   a:hover [btn-mode]:not([class*="hv0"]), a:hover [class*="bm0"]:not([class*="hv0"]),
   [link-mode]:not([class*="hv0"]):hover, [class*="lm0"]:not([class*="hv0"]):hover,
   a:hover [link-mode]:not([class*="hv0"]), a:hover [class*="lm0"]:not([class*="hv0"]) {
-	--bg1: var(--bg1-hover); --bg2: var(--bg2-hover); --bg3: var(--bg3-hover);
-	--bg1b: var(--bg1b-hover);
-	--fc1: var(--fc1-hover); --fc2: var(--fc2-hover); --fc3: var(--fc3-hover);
-	--bc1: var(--bc1-hover); --bc2: var(--bc2-hover); --bc3: var(--bc3-hover);
-	--sc1: var(--sc1-hover);
+    --bg1: var(--bg1-hover); --bg2: var(--bg2-hover); --bg3: var(--bg3-hover);
+    --bg1b: var(--bg1b-hover);
+    --fc1: var(--fc1-hover); --fc2: var(--fc2-hover); --fc3: var(--fc3-hover);
+    --bc1: var(--bc1-hover); --bc2: var(--bc2-hover); --bc3: var(--bc3-hover);
+    --sc1: var(--sc1-hover);
   }
 }
 /* active variables */
 [link-mode].is-active, [class*="lm0"].is-active,
 [link-mode].w--current, [class*="lm0"].w--current {
-    --bg1: var(--bg1-active); --bg2: var(--bg2-active); --bg3: var(--bg3-active);
-    --bg1b: var(--bg1b-active);
-    --fc1: var(--fc1-active); --fc2: var(--fc2-active); --fc3: var(--fc3-active);
-    --bc1: var(--bc1-active); --bc2: var(--bc2-active); --bc3: var(--bc3-active);
-    --sc1: var(--sc1-active);
+  --bg1: var(--bg1-active); --bg2: var(--bg2-active); --bg3: var(--bg3-active);
+  --bg1b: var(--bg1b-active);
+  --fc1: var(--fc1-active); --fc2: var(--fc2-active); --fc3: var(--fc3-active);
+  --bc1: var(--bc1-active); --bc2: var(--bc2-active); --bc3: var(--bc3-active);
+  --sc1: var(--sc1-active);
 }
 /* applies default border width to cards, elements, and buttons */
 [card-mode]:not([card-mode=""]), [class*="cm0"],
 [element-mode]:not([element-mode=""]), [class*="em0"],
 [btn-mode]:not([btn-mode=""]), [class*="bm0"] {
-	--border-width: var(--bw1);
+  --border-width: var(--bw1);
 }
 /* btn and link mode transitions */
 [btn-mode], [class*="bm0"],
 [link-mode], [class*="lm0"] {
-	transition-property: background-color, color, border-color;
-	transition-duration: 200ms;
+  transition-property: background-color, color, border-color;
+  transition-duration: 200ms;
 }
 
 /* utility defaults */
 * {
-	--text-stroke-width: 0;
-	-webkit-text-stroke-width: var(--text-stroke-width);
- 	 --border-radius: 0;
-  	border-radius: var(--border-radius);
-	--border-width: 0;
-  	border-width: var(--border-width);
-  	border-style: solid;
-	--grid-column-gap: 0;
-  	grid-column-gap: var(--grid-column-gap);
-	--grid-row-gap: 0;
-  	grid-row-gap: var(--grid-row-gap);
+  --text-stroke-width: 0;
+  -webkit-text-stroke-width: var(--text-stroke-width);
+  --border-radius: 0;
+  border-radius: var(--border-radius);
+  --border-width: 0;
+  border-width: var(--border-width);
+  border-style: solid;
+  --grid-column-gap: 0;
+  grid-column-gap: var(--grid-column-gap);
+  --grid-row-gap: 0;
+  grid-row-gap: var(--grid-row-gap);
 }
 
 /* element defaults */
@@ -124,12 +124,11 @@ body { overscroll-behavior: none; }
 .wf-empty { padding-bottom: 0; padding-right: 0; }
 
 /* LAYOUT STYLES */
-
-/**%{{display: grid}**/
+/* grid */
 [class*="gd1"] {
-	--grid-column-gap: var(--default-grid-gap);
-	--grid-row-gap: var(--default-grid-gap);
-	--column-count: 1;
+  --grid-column-gap: var(--default-grid-gap);
+  --grid-row-gap: var(--default-grid-gap);
+  --column-count: 1;
   display: grid;
   grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
   grid-template-rows: auto;
@@ -138,14 +137,12 @@ body { overscroll-behavior: none; }
   --row-span: 1;
 }
 [class*="gd1"] > * {
-	grid-column-start: var(--column-start) !important;
+  grid-column-start: var(--column-start) !important;
   grid-column-end: span var(--column-span) !important;
   grid-row-start: auto !important;
   grid-row-end: span var(--row-span) !important;
 }
-/**}%**/
-
-/**%{{column portrait: -}**/
+/* column portrait */
 [class*="cp1"] { --column-count: 1; }
 [class*="cp2"] { --column-count: 2; }
 [class*="cp3"] { --column-count: 3; }
@@ -158,8 +155,6 @@ body { overscroll-behavior: none; }
 [class*="cp10"] { --column-count: 10; }
 [class*="cp11"] { --column-count: 11; }
 [class*="cp12"] { --column-count: 12; }
-/**}%**/
-
 /* item columns portrait */
 [class*="gd1"] > [class*="cp1"] { --column-span: 1; }
 [class*="gd1"] > [class*="cp2"] { --column-span: 2; }
@@ -173,17 +168,14 @@ body { overscroll-behavior: none; }
 [class*="gd1"] > [class*="cp10"] { --column-span: 10; }
 [class*="gd1"] > [class*="cp11"] { --column-span: 11; }
 [class*="gd1"] > [class*="cp12"] { --column-span: 12; }
-
-/**%{{row portrait: -}**/
+/* row portrait */
 [class*="rp1"] { --row-span: 1; }
 [class*="rp2"] { --row-span: 2; }
 [class*="rp3"] { --row-span: 3; }
 [class*="rp4"] { --row-span: 4; }
 [class*="rp5"] { --row-span: 5; }
 [class*="rp6"] { --row-span: 6; }
-/**}%**/
-
-/**%{{start portrait: -}**/
+/* start portrait */
 [class*="sp1"] { --column-start: 1; }
 [class*="sp2"] { --column-start: 2; }
 [class*="sp3"] { --column-start: 3; }
@@ -196,17 +188,13 @@ body { overscroll-behavior: none; }
 [class*="sp10"] { --column-start: 10; }
 [class*="sp11"] { --column-start: 11; }
 [class*="sp0"] { --column-start: auto; }
-/**}%**/
-
-/**%{{order portrait: -}**/
+/* order portrait */
 [class*="op1"] { order: -1; }
 [class*="op2"] { order: 1; }
 [class*="op0"] { order: 0; }
-/**}%**/
-
 /* landscape */
 @media screen and (min-width: 480px) {
-	/**%{{column landscape: -}**/
+  /* column landscape */
   [class*="cl1"] { --column-count: 1; }
   [class*="cl2"] { --column-count: 2; }
   [class*="cl3"] { --column-count: 3; }
@@ -219,9 +207,7 @@ body { overscroll-behavior: none; }
   [class*="cl10"] { --column-count: 10; }
   [class*="cl11"] { --column-count: 11; }
   [class*="cl12"] { --column-count: 12; }
-  /**}%**/
-
-	/* item columns landscape */
+  /* item columns landscape */
   [class*="gd1"] > [class*="cl1"] { --column-span: 1; }
   [class*="gd1"] > [class*="cl2"] { --column-span: 2; }
   [class*="gd1"] > [class*="cl3"] { --column-span: 3; }
@@ -234,17 +220,14 @@ body { overscroll-behavior: none; }
   [class*="gd1"] > [class*="cl10"] { --column-span: 10; }
   [class*="gd1"] > [class*="cl11"] { --column-span: 11; }
   [class*="gd1"] > [class*="cl12"] { --column-span: 12; }
-  
-	/**%{{row landscape: -}**/
+  /* row landscape */
   [class*="rl1"] { --row-span: 1; }
   [class*="rl2"] { --row-span: 2; }
   [class*="rl3"] { --row-span: 3; }
   [class*="rl4"] { --row-span: 4; }
   [class*="rl5"] { --row-span: 5; }
   [class*="rl6"] { --row-span: 6; }
-  /**}%**/
-  
-	/**%{{start landscape: -}**/
+  /* start landscape */
   [class*="sl1"] { --column-start: 1; }
   [class*="sl2"] { --column-start: 2; }
   [class*="sl3"] { --column-start: 3; }
@@ -257,18 +240,14 @@ body { overscroll-behavior: none; }
   [class*="sl10"] { --column-start: 10; }
   [class*="sl11"] { --column-start: 11; }
   [class*="sl0"] { --column-start: auto; }
-  /**}%**/
-  
-	/**%{{order landscape: -}**/
+  /* order landscape */
   [class*="ol1"] { order: -1; }
   [class*="ol2"] { order: 1; }
   [class*="ol0"] { order: 0; }
-  /**}%**/
 }
-
 /* tablet */
 @media screen and (min-width: 768px) {
-	/**%{{column tablet: -}**/
+  /* column tablet */
   [class*="ct1"] { --column-count: 1; }
   [class*="ct2"] { --column-count: 2; }
   [class*="ct3"] { --column-count: 3; }
@@ -281,9 +260,7 @@ body { overscroll-behavior: none; }
   [class*="ct10"] { --column-count: 10; }
   [class*="ct11"] { --column-count: 11; }
   [class*="ct12"] { --column-count: 12; }
-  /**}%**/
-  
-	/* item columns tablet */
+  /* item columns tablet */
   [class*="gd1"] > [class*="ct1"] { --column-span: 1; }
   [class*="gd1"] > [class*="ct2"] { --column-span: 2; }
   [class*="gd1"] > [class*="ct3"] { --column-span: 3; }
@@ -296,17 +273,14 @@ body { overscroll-behavior: none; }
   [class*="gd1"] > [class*="ct10"] { --column-span: 10; }
   [class*="gd1"] > [class*="ct11"] { --column-span: 11; }
   [class*="gd1"] > [class*="ct12"] { --column-span: 12; }
-
-	/**%{{row tablet: -}**/
+  /* row tablet */
   [class*="rt1"] { --row-span: 1; }
   [class*="rt2"] { --row-span: 2; }
   [class*="rt3"] { --row-span: 3; }
   [class*="rt4"] { --row-span: 4; }
   [class*="rt5"] { --row-span: 5; }
   [class*="rt6"] { --row-span: 6; }
-  /**}%**/
-  
-	/**%{{start tablet: -}**/
+  /* start tablet */
   [class*="st1"] { --column-start: 1; }
   [class*="st2"] { --column-start: 2; }
   [class*="st3"] { --column-start: 3; }
@@ -319,18 +293,14 @@ body { overscroll-behavior: none; }
   [class*="st10"] { --column-start: 10; }
   [class*="st11"] { --column-start: 11; }
   [class*="st0"] { --column-start: auto; }
-  /**}%**/
-  
-	/**%{{order tablet: -}**/
+  /* order tablet */
   [class*="ot1"] { order: -1; }
   [class*="ot2"] { order: 1; }
   [class*="ot0"] { order: 0; }
-  /**}%**/
 }
-
 /* desktop */
 @media screen and (min-width: 992px) {
-	/**%{{column desktop: -}**/
+  /* column desktop */
   [class*="cd1"] { --column-count: 1; }
   [class*="cd2"] { --column-count: 2; }
   [class*="cd3"] { --column-count: 3; }
@@ -343,8 +313,6 @@ body { overscroll-behavior: none; }
   [class*="cd10"] { --column-count: 10; }
   [class*="cd11"] { --column-count: 11; }
   [class*="cd12"] { --column-count: 12; }
-  /**}%**/
-  
   /* item columns desktop */
   [class*="gd1"] > [class*="cd1"] { --column-span: 1; }
   [class*="gd1"] > [class*="cd2"] { --column-span: 2; }
@@ -358,17 +326,14 @@ body { overscroll-behavior: none; }
   [class*="gd1"] > [class*="cd10"] { --column-span: 10; }
   [class*="gd1"] > [class*="cd11"] { --column-span: 11; }
   [class*="gd1"] > [class*="cd12"] { --column-span: 12; }
-
-	/**%{{row desktop: -}**/
+  /* row desktop */
   [class*="rd1"] { --row-span: 1; }
   [class*="rd2"] { --row-span: 2; }
   [class*="rd3"] { --row-span: 3; }
   [class*="rd4"] { --row-span: 4; }
   [class*="rd5"] { --row-span: 5; }
   [class*="rd6"] { --row-span: 6; }
-  /**}%**/
-  
-	/**%{{start desktop: -}**/
+  /* start desktop */
   [class*="sd1"] { --column-start: 1; }
   [class*="sd2"] { --column-start: 2; }
   [class*="sd3"] { --column-start: 3; }
@@ -381,12 +346,9 @@ body { overscroll-behavior: none; }
   [class*="sd10"] { --column-start: 10; }
   [class*="sd11"] { --column-start: 11; }
   [class*="sd0"] { --column-start: auto; }
-  /**}%**/
-  
-	/**%{{order desktop: -}**/
+  /* order desktop */
   [class*="od1"] { order: -1; }
   [class*="od2"] { order: 1; }
   [class*="od0"] { order: 0; }
-  /**}%**/
 }
 
