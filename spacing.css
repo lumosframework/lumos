@@ -1,3 +1,10 @@
+/**
+ * Lumos Spacing 1.0.0
+ * Copyright 2023 Timothy Ricks
+ * Released under the MIT License
+ * Released on: July 30, 2023
+*/
+
 html {
   --size0-25: calc(0.25rem * var(--spacing-scale));
   --size0-5: calc(0.5rem * var(--spacing-scale));
