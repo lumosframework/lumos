@@ -138,15 +138,26 @@ body,
 
 /* element defaults */
 /* remove scroll bounce */
-body { overscroll-behavior: none; }
+body { 
+  overscroll-behavior: none;
+}
 /* prevent horizontal scroll */
-.page_wrap { overflow: clip; }
+.page_wrap { 
+  overflow: clip;
+}
 /* enable setting w-button border radius with utilities */
-.w-button { border-radius: var(--border-radius); }
+.w-button { 
+  border-radius: var(--border-radius);
+}
 /* hide container ::before & ::after */
-.w-container::before, .w-container::after { display: none; }
+.w-container::before, .w-container::after { 
+  display: none;
+}
 /* empty webflow div in designer view */
-.wf-empty { padding-bottom: 0; padding-right: 0; }
+.wf-empty { 
+  padding-bottom: 0; 
+  padding-right: 0;
+}
 
 /* LAYOUT STYLES */
 /* grid */
