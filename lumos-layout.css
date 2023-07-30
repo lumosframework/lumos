@@ -8,10 +8,10 @@
 [class*="gd1"] {
   --grid-column-gap: var(--default-column-gap);
   --grid-row-gap: var(--default-row-gap);
-  --column-count: 1;
   display: grid;
   grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
   grid-template-rows: auto;
+  --column-count: 1;
   --column-span: 1;
   --column-start: auto;
   --row-span: 1;
