@@ -1,8 +1,8 @@
 /* LAYOUT STYLES */
 * {
-	--grid-column-gap: 0;
+  --grid-column-gap: 0;
   grid-column-gap: var(--grid-column-gap);
-	--grid-row-gap: 0;
+  --grid-row-gap: 0;
   grid-row-gap: var(--grid-row-gap);
 }
 [class*="gd1"] {
