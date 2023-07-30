@@ -32,7 +32,10 @@ body {
 
 /* color defaults */
 a { color: inherit; }
-* { border-color: var(--bc1); -webkit-text-stroke-color: var(--sc1); }
+* { 
+  border-color: var(--bc1);
+  -webkit-text-stroke-color: var(--sc1);
+}
 *::selection { background: var(--selection-bg); color: var(--selection-fc); }
 body,
 [section-mode]:not([section-mode=""]), [class*="sm0"],
