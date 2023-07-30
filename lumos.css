@@ -1,1 +1,124 @@
+/* typography defaults */
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; margin-bottom: 0; }
+[class*="fs0"], h1, [class*="fs1"], h2, [class*="fs2"], h3, [class*="fs3"], 
+h4, [class*="fs4"], h5, [class*="fs5"], h6, [class*="fs6"], p, [class*="fs7"]  {
+	font-size: inherit;
+	font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+	text-transform: inherit;
+}
+body { font-smoothing: antialiased; -webkit-font-smoothing: antialiased; }
+:is(h1, h2, h3, h4, h5, h6, p) a { text-decoration: underline; }
+.w-richtext > *:first-child { margin-top: 0; }
+.w-richtext > *:last-child { margin-bottom: 0; }
 
+/* color defaults */
+a { color: inherit; }
+* { border-color: var(--bc1); -webkit-text-stroke-color: var(--sc1); }
+*::selection { background: var(--selection-bg); color: var(--selection-fc); }
+body,
+[section-mode]:not([section-mode=""]), [class*="sm0"],
+[card-mode]:not([card-mode=""]), [class*="cm0"],
+[element-mode]:not([element-mode=""]), [class*="em0"],
+[btn-mode]:not([btn-mode=""]), [class*="bm0"],
+[link-mode]:not([link-mode=""]), [class*="lm0"] {
+  background-color: var(--bg1);
+	border-color: var(--bg1b);
+  color: var(--fc1);
+}
+body,
+:where([section-mode]:not([section-mode=""]), [class*="sm0"]),
+:where([card-mode]:not([card-mode=""]), [class*="cm0"]),
+:where([element-mode]:not([element-mode=""]), [class*="em0"]),
+:where([btn-mode]:not([btn-mode=""]), [class*="bm0"]),
+:where([link-mode]:not([link-mode=""]), [class*="lm0"]) {
+	/* mode variable defaults */
+  --m-bg1: transparent; --m-bg1-hover: var(--m-bg1); --m-bg1-active: var(--m-bg1);
+  --m-bg2: transparent; --m-bg2-hover: var(--m-bg2); --m-bg2-active: var(--m-bg2);
+  --m-bg3: transparent; --m-bg3-hover: var(--m-bg3); --m-bg3-active: var(--m-bg3);
+  --m-bg1b: var(--bg1); --m-bg1b-hover: var(--m-bg1b); --m-bg1b-active: var(--m-bg1b);
+  --m-fc1: inherit; --m-fc1-hover: var(--m-fc1); --m-fc1-active: var(--m-fc1);
+  --m-fc2: var(--fc1); --m-fc2-hover: var(--m-fc2); --m-fc2-active: var(--m-fc2);
+  --m-fc3: var(--fc1); --m-fc3-hover: var(--m-fc3); --m-fc3-active: var(--m-fc3);
+  --m-bc1: var(--fc1); --m-bc1-hover: var(--m-bc1); --m-bc1-active: var(--m-bc1);
+  --m-bc2: var(--fc1); --m-bc2-hover: var(--m-bc2); --m-bc2-active: var(--m-bc2);
+  --m-bc3: var(--fc1); --m-bc3-hover: var(--m-bc3); --m-bc3-active: var(--m-bc3);
+  --m-sc1: var(--fc1); --m-sc1-hover: var(--m-sc1); --m-sc1-active: var(--m-sc1);
+  /* mode variable finals */
+	--selection-bg: var(--fc1);
+  --selection-fc: var(--bg1);
+  --bg1: var(--m-bg1); --bg1-hover: var(--m-bg1-hover); --bg1-active: var(--m-bg1-active);
+  --bg2: var(--m-bg2); --bg2-hover: var(--m-bg2-hover); --bg2-active: var(--m-bg2-active);
+  --bg3: var(--m-bg3); --bg3-hover: var(--m-bg3-hover); --bg3-active: var(--m-bg3-active);
+  --bg1b: var(--m-bg1b); --bg1b-hover: var(--m-bg1b-hover); --bg1b-active: var(--m-bg1b-active);
+  --fc1: var(--m-fc1); --fc1-hover: var(--m-fc1-hover); --fc1-active: var(--m-fc1-active);
+  --fc2: var(--m-fc2); --fc2-hover: var(--m-fc2-hover); --fc2-active: var(--m-fc2-active);
+  --fc3: var(--m-fc3); --fc3-hover: var(--m-fc3-hover); --fc3-active: var(--m-fc3-active);
+  --bc1: var(--m-bc1); --bc1-hover: var(--m-bc1-hover); --bc1-active: var(--m-bc1-active);
+  --bc2: var(--m-bc2); --bc2-hover: var(--m-bc2-hover); --bc2-active: var(--m-bc2-active);
+  --bc3: var(--m-bc3); --bc3-hover: var(--m-bc3-hover); --bc3-active: var(--m-bc3-active);
+  --sc1: var(--m-sc1); --sc1-hover: var(--m-sc1-hover); --sc1-active: var(--m-sc1-active);
+}
+/* hover variables */
+@media (pointer: fine) {
+	[btn-mode]:not([class*="hv0"]):hover, [class*="bm0"]:not([class*="hv0"]):hover,
+  a:hover [btn-mode]:not([class*="hv0"]), a:hover [class*="bm0"]:not([class*="hv0"]),
+	[link-mode]:not([class*="hv0"]):hover, [class*="lm0"]:not([class*="hv0"]):hover,
+	a:hover [link-mode]:not([class*="hv0"]), a:hover [class*="lm0"]:not([class*="hv0"])  {
+    --bg1: var(--bg1-hover); --bg2: var(--bg2-hover); --bg3: var(--bg3-hover);
+    --bg1b: var(--bg1b-hover);
+    --fc1: var(--fc1-hover); --fc2: var(--fc2-hover); --fc3: var(--fc3-hover);
+    --bc1: var(--bc1-hover); --bc2: var(--bc2-hover); --bc3: var(--bc3-hover);
+    --sc1: var(--sc1-hover);
+  }
+}
+/* active variables */
+[link-mode].is-active, [class*="lm0"].is-active,
+[link-mode].w--current, [class*="lm0"].w--current {
+    --bg1: var(--bg1-active); --bg2: var(--bg2-active); --bg3: var(--bg3-active);
+    --bg1b: var(--bg1b-active);
+    --fc1: var(--fc1-active); --fc2: var(--fc2-active); --fc3: var(--fc3-active);
+    --bc1: var(--bc1-active); --bc2: var(--bc2-active); --bc3: var(--bc3-active);
+    --sc1: var(--sc1-active);
+}
+/* applies default border width to cards, elements, and buttons */
+[card-mode]:not([card-mode=""]), [class*="cm0"],
+[element-mode]:not([element-mode=""]), [class*="em0"],
+[btn-mode]:not([btn-mode=""]), [class*="bm0"] {
+	--border-width: var(--bw1);
+}
+/* btn and link mode transitions */
+[btn-mode], [class*="bm0"],
+[link-mode], [class*="lm0"] {
+	transition-property: background-color, color, border-color;
+  transition-duration: 200ms;
+}
+
+/* utility defaults */
+* {
+	--text-stroke-width: 0;
+	-webkit-text-stroke-width: var(--text-stroke-width);
+  --border-radius: 0;
+  border-radius: var(--border-radius);
+	--border-width: 0;
+  border-width: var(--border-width);
+  border-style: solid;
+	--grid-column-gap: 0;
+  grid-column-gap: var(--grid-column-gap);
+	--grid-row-gap: 0;
+  grid-row-gap: var(--grid-row-gap);
+}
+
+/* element defaults */
+/* remove scroll bounce */
+body { overscroll-behavior: none; }
+/* prevent horizontal scroll */
+.page_wrap { overflow: clip; }
+/* enable setting w-button border radius with utilities */
+.w-button { border-radius: var(--border-radius); }
+/* hide container ::before & ::after */
+.w-container::before, .w-container::after { display: none; }
+/* empty webflow div in designer view */
+.wf-empty { padding-bottom: 0; padding-right: 0; }
