@@ -27,11 +27,17 @@ body {
 :is(h1, h2, h3, h4, h5, h6, p) a { 
   text-decoration: underline;
 }
-.w-richtext > *:first-child { margin-top: 0; }
-.w-richtext > *:last-child { margin-bottom: 0; }
+.w-richtext > *:first-child { 
+  margin-top: 0;
+}
+.w-richtext > *:last-child { 
+  margin-bottom: 0;
+}
 
 /* color defaults */
-a { color: inherit; }
+a { 
+  color: inherit;
+}
 * { 
   border-color: var(--bc1);
   -webkit-text-stroke-color: var(--sc1);
