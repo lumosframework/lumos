@@ -2,12 +2,12 @@
 h1, h2, h3, h4, h5, h6, p { margin-top: 0; margin-bottom: 0; }
 [class*="fs0"], h1, [class*="fs1"], h2, [class*="fs2"], h3, [class*="fs3"], 
 h4, [class*="fs4"], h5, [class*="fs5"], h6, [class*="fs6"], p, [class*="fs7"]  {
-	font-size: inherit;
-	font-family: inherit;
+  font-size: inherit;
+  font-family: inherit;
   font-weight: inherit;
   line-height: inherit;
   letter-spacing: inherit;
-	text-transform: inherit;
+  text-transform: inherit;
 }
 body { font-smoothing: antialiased; -webkit-font-smoothing: antialiased; }
 :is(h1, h2, h3, h4, h5, h6, p) a { text-decoration: underline; }
@@ -25,7 +25,7 @@ body,
 [btn-mode]:not([btn-mode=""]), [class*="bm0"],
 [link-mode]:not([link-mode=""]), [class*="lm0"] {
   background-color: var(--bg1);
-	border-color: var(--bg1b);
+  border-color: var(--bg1b);
   color: var(--fc1);
 }
 body,
@@ -34,7 +34,7 @@ body,
 :where([element-mode]:not([element-mode=""]), [class*="em0"]),
 :where([btn-mode]:not([btn-mode=""]), [class*="bm0"]),
 :where([link-mode]:not([link-mode=""]), [class*="lm0"]) {
-	/* mode variable defaults */
+  /* mode variable defaults */
   --m-bg1: transparent; --m-bg1-hover: var(--m-bg1); --m-bg1-active: var(--m-bg1);
   --m-bg2: transparent; --m-bg2-hover: var(--m-bg2); --m-bg2-active: var(--m-bg2);
   --m-bg3: transparent; --m-bg3-hover: var(--m-bg3); --m-bg3-active: var(--m-bg3);
@@ -47,7 +47,7 @@ body,
   --m-bc3: var(--fc1); --m-bc3-hover: var(--m-bc3); --m-bc3-active: var(--m-bc3);
   --m-sc1: var(--fc1); --m-sc1-hover: var(--m-sc1); --m-sc1-active: var(--m-sc1);
   /* mode variable finals */
-	--selection-bg: var(--fc1);
+  --selection-bg: var(--fc1);
   --selection-fc: var(--bg1);
   --bg1: var(--m-bg1); --bg1-hover: var(--m-bg1-hover); --bg1-active: var(--m-bg1-active);
   --bg2: var(--m-bg2); --bg2-hover: var(--m-bg2-hover); --bg2-active: var(--m-bg2-active);
@@ -63,15 +63,15 @@ body,
 }
 /* hover variables */
 @media (pointer: fine) {
-	[btn-mode]:not([class*="hv0"]):hover, [class*="bm0"]:not([class*="hv0"]):hover,
+  [btn-mode]:not([class*="hv0"]):hover, [class*="bm0"]:not([class*="hv0"]):hover,
   a:hover [btn-mode]:not([class*="hv0"]), a:hover [class*="bm0"]:not([class*="hv0"]),
-	[link-mode]:not([class*="hv0"]):hover, [class*="lm0"]:not([class*="hv0"]):hover,
-	a:hover [link-mode]:not([class*="hv0"]), a:hover [class*="lm0"]:not([class*="hv0"])  {
-    --bg1: var(--bg1-hover); --bg2: var(--bg2-hover); --bg3: var(--bg3-hover);
-    --bg1b: var(--bg1b-hover);
-    --fc1: var(--fc1-hover); --fc2: var(--fc2-hover); --fc3: var(--fc3-hover);
-    --bc1: var(--bc1-hover); --bc2: var(--bc2-hover); --bc3: var(--bc3-hover);
-    --sc1: var(--sc1-hover);
+  [link-mode]:not([class*="hv0"]):hover, [class*="lm0"]:not([class*="hv0"]):hover,
+  a:hover [link-mode]:not([class*="hv0"]), a:hover [class*="lm0"]:not([class*="hv0"]) {
+	--bg1: var(--bg1-hover); --bg2: var(--bg2-hover); --bg3: var(--bg3-hover);
+	--bg1b: var(--bg1b-hover);
+	--fc1: var(--fc1-hover); --fc2: var(--fc2-hover); --fc3: var(--fc3-hover);
+	--bc1: var(--bc1-hover); --bc2: var(--bc2-hover); --bc3: var(--bc3-hover);
+	--sc1: var(--sc1-hover);
   }
 }
 /* active variables */
@@ -93,22 +93,22 @@ body,
 [btn-mode], [class*="bm0"],
 [link-mode], [class*="lm0"] {
 	transition-property: background-color, color, border-color;
-  transition-duration: 200ms;
+	transition-duration: 200ms;
 }
 
 /* utility defaults */
 * {
 	--text-stroke-width: 0;
 	-webkit-text-stroke-width: var(--text-stroke-width);
-  --border-radius: 0;
-  border-radius: var(--border-radius);
+ 	 --border-radius: 0;
+  	border-radius: var(--border-radius);
 	--border-width: 0;
-  border-width: var(--border-width);
-  border-style: solid;
+  	border-width: var(--border-width);
+  	border-style: solid;
 	--grid-column-gap: 0;
-  grid-column-gap: var(--grid-column-gap);
+  	grid-column-gap: var(--grid-column-gap);
 	--grid-row-gap: 0;
-  grid-row-gap: var(--grid-row-gap);
+  	grid-row-gap: var(--grid-row-gap);
 }
 
 /* element defaults */
