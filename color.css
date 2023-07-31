@@ -1,4 +1,10 @@
-/* color defaults */
+/**
+ * Lumos Color 1.0.0
+ * Copyright 2023 Timothy Ricks
+ * Released under the MIT License
+ * Released on: July 30, 2023
+*/
+
 a { color: inherit; }
 * { border-color: var(--bc1); -webkit-text-stroke-color: var(--sc1); }
 *::selection { background: var(--selection-bg); color: var(--selection-fc); }
