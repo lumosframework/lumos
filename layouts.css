@@ -6,14 +6,14 @@
 */
 
 * {
-  --grid-column-gap: 0;
-  grid-column-gap: var(--grid-column-gap);
-  --grid-row-gap: 0;
-  grid-row-gap: var(--grid-row-gap);
+  --gp: 0;
+  --gv: var(--gp);
+  --gh: var(--gp);
+  grid-row-gap: var(--gv);
+  grid-column-gap: var(--gh);
 }
 [class*="gd1"] {
-  --grid-column-gap: var(--default-column-gap);
-  --grid-row-gap: var(--default-row-gap);
+  --gp: var(--default-grid-gap);
   display: grid;
   grid-template-columns: repeat(var(--col-count), minmax(0, 1fr));
   grid-template-rows: auto;
