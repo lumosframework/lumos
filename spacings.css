@@ -13,10 +13,8 @@ html * {
   --gp: 0;
   --gv: var(--gp);
   --gh: var(--gp);
-  --grid-row-gap: var(--gv);
-  --grid-column-gap: var(--gh);
-  grid-row-gap: var(--grid-row-gap);
-  grid-column-gap: var(--grid-column-gap);
+  grid-row-gap: var(--gv);
+  grid-column-gap: var(--gh);
   --pd: 0;
   --pv: var(--pd);
   --ph: var(--pd);
