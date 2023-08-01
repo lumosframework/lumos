@@ -1,5 +1,5 @@
 /**
- * Lumos Color 1.0.0
+ * Lumos Color 1.0.1
  * Copyright 2023 Timothy Ricks
  * Released under the MIT License
  * Released on: July 30, 2023
@@ -25,6 +25,7 @@ body,
   background-color: var(--bg1);
   background-image: var(--bg1i);
   border-color: var(--bg1b);
+  box-shadow: var(--bg1s);
   color: var(--fc1);
 }
 body,
@@ -37,21 +38,27 @@ body,
   --m-bg1: transparent; --m-bg1-hover: var(--m-bg1); --m-bg1-active: var(--m-bg1);
   --m-bg1i: none; --m-bg1i-hover: var(--m-bg1i); --m-bg1i-active: var(--m-bg1i);
   --m-bg1b: var(--bg1); --m-bg1b-hover: var(--m-bg1b); --m-bg1b-active: var(--m-bg1b);
+  --m-bg1s: none; --m-bg1s-hover: var(--m-bg1s); --m-bg1s-active: var(--m-bg1s);
   --m-bg2: transparent; --m-bg2-hover: var(--m-bg2); --m-bg2-active: var(--m-bg2);
   --m-bg2i: none; --m-bg2i-hover: var(--m-bg2i); --m-bg2i-active: var(--m-bg2i);
   --m-bg2b: var(--bg2); --m-bg2b-hover: var(--m-bg2b); --m-bg2b-active: var(--m-bg2b);
+  --m-bg2s: none; --m-bg2s-hover: var(--m-bg2s); --m-bg2s-active: var(--m-bg2s);
   --m-bg3: transparent; --m-bg3-hover: var(--m-bg3); --m-bg3-active: var(--m-bg3);
   --m-bg3i: none; --m-bg3i-hover: var(--m-bg3i); --m-bg3i-active: var(--m-bg3i);
   --m-bg3b: var(--bg3); --m-bg3b-hover: var(--m-bg3b); --m-bg3b-active: var(--m-bg3b);
+  --m-bg3s: none; --m-bg3s-hover: var(--m-bg3s); --m-bg3s-active: var(--m-bg3s);
   --m-bg4: transparent; --m-bg4-hover: var(--m-bg4); --m-bg4-active: var(--m-bg4);
   --m-bg4i: none; --m-bg4i-hover: var(--m-bg4i); --m-bg4i-active: var(--m-bg4i);
   --m-bg4b: var(--bg4); --m-bg4b-hover: var(--m-bg4b); --m-bg4b-active: var(--m-bg4b);
+  --m-bg4s: none; --m-bg4s-hover: var(--m-bg4s); --m-bg4s-active: var(--m-bg4s);
   --m-bg5: transparent; --m-bg5-hover: var(--m-bg5); --m-bg5-active: var(--m-bg5);
   --m-bg5i: none; --m-bg5i-hover: var(--m-bg5i); --m-bg5i-active: var(--m-bg5i);
   --m-bg5b: var(--bg5); --m-bg5b-hover: var(--m-bg5b); --m-bg5b-active: var(--m-bg5b);
+  --m-bg5s: none; --m-bg5s-hover: var(--m-bg5s); --m-bg5s-active: var(--m-bg5s);
   --m-bg6: transparent; --m-bg6-hover: var(--m-bg6); --m-bg6-active: var(--m-bg6);
   --m-bg6i: none; --m-bg6i-hover: var(--m-bg6i); --m-bg6i-active: var(--m-bg6i);
   --m-bg6b: var(--bg6); --m-bg6b-hover: var(--m-bg6b); --m-bg6b-active: var(--m-bg6b);
+  --m-bg6s: none; --m-bg6s-hover: var(--m-bg6s); --m-bg6s-active: var(--m-bg6s);
   --m-fc1: inherit; --m-fc1-hover: var(--m-fc1); --m-fc1-active: var(--m-fc1);
   --m-fc2: var(--fc1); --m-fc2-hover: var(--m-fc2); --m-fc2-active: var(--m-fc2);
   --m-fc3: var(--fc1); --m-fc3-hover: var(--m-fc3); --m-fc3-active: var(--m-fc3);
@@ -70,21 +77,27 @@ body,
   --bg1: var(--m-bg1); --bg1-hover: var(--m-bg1-hover); --bg1-active: var(--m-bg1-active);
   --bg1i: var(--m-bg1i); --bg1i-hover: var(--m-bg1i-hover); --bg1i-active: var(--m-bg1i-active);
   --bg1b: var(--m-bg1b); --bg1b-hover: var(--m-bg1b-hover); --bg1b-active: var(--m-bg1b-active);
+  --bg1s: var(--m-bg1s); --bg1s-hover: var(--m-bg1s-hover); --bg1s-active: var(--m-bg1s-active);
   --bg2: var(--m-bg2); --bg2-hover: var(--m-bg2-hover); --bg2-active: var(--m-bg2-active);
   --bg2i: var(--m-bg2i); --bg2i-hover: var(--m-bg2i-hover); --bg2i-active: var(--m-bg2i-active);
   --bg2b: var(--m-bg2b); --bg2b-hover: var(--m-bg2b-hover); --bg2b-active: var(--m-bg2b-active);
+  --bg2s: var(--m-bg2s); --bg2s-hover: var(--m-bg2s-hover); --bg2s-active: var(--m-bg2s-active);
   --bg3: var(--m-bg3); --bg3-hover: var(--m-bg3-hover); --bg3-active: var(--m-bg3-active);
   --bg3i: var(--m-bg3i); --bg3i-hover: var(--m-bg3i-hover); --bg3i-active: var(--m-bg3i-active);
   --bg3b: var(--m-bg3b); --bg3b-hover: var(--m-bg3b-hover); --bg3b-active: var(--m-bg3b-active);
+  --bg3s: var(--m-bg3s); --bg3s-hover: var(--m-bg3s-hover); --bg3s-active: var(--m-bg3s-active);
   --bg4: var(--m-bg4); --bg4-hover: var(--m-bg4-hover); --bg4-active: var(--m-bg4-active);
   --bg4i: var(--m-bg4i); --bg4i-hover: var(--m-bg4i-hover); --bg4i-active: var(--m-bg4i-active);
   --bg4b: var(--m-bg4b); --bg4b-hover: var(--m-bg4b-hover); --bg4b-active: var(--m-bg4b-active);
+  --bg4s: var(--m-bg4s); --bg4s-hover: var(--m-bg4s-hover); --bg4s-active: var(--m-bg4s-active);
   --bg5: var(--m-bg5); --bg5-hover: var(--m-bg5-hover); --bg5-active: var(--m-bg5-active);
   --bg5i: var(--m-bg5i); --bg5i-hover: var(--m-bg5i-hover); --bg5i-active: var(--m-bg5i-active);
   --bg5b: var(--m-bg5b); --bg5b-hover: var(--m-bg5b-hover); --bg5b-active: var(--m-bg5b-active);
+  --bg5s: var(--m-bg5s); --bg5s-hover: var(--m-bg5s-hover); --bg5s-active: var(--m-bg5s-active);
   --bg6: var(--m-bg6); --bg6-hover: var(--m-bg6-hover); --bg6-active: var(--m-bg6-active);
   --bg6i: var(--m-bg6i); --bg6i-hover: var(--m-bg6i-hover); --bg6i-active: var(--m-bg6i-active);
   --bg6b: var(--m-bg6b); --bg6b-hover: var(--m-bg6b-hover); --bg6b-active: var(--m-bg6b-active);
+  --bg6s: var(--m-bg6s); --bg6s-hover: var(--m-bg6s-hover); --bg6s-active: var(--m-bg6s-active);
   --fc1: var(--m-fc1); --fc1-hover: var(--m-fc1-hover); --fc1-active: var(--m-fc1-active);
   --fc2: var(--m-fc2); --fc2-hover: var(--m-fc2-hover); --fc2-active: var(--m-fc2-active);
   --fc3: var(--m-fc3); --fc3-hover: var(--m-fc3-hover); --fc3-active: var(--m-fc3-active);
@@ -104,12 +117,12 @@ body,
   a:hover [btn-mode]:not([class*="hv0"]), a:hover [class*="bm0"]:not([class*="hv0"]),
   [link-mode]:not([class*="hv0"]):hover, [class*="lm0"]:not([class*="hv0"]):hover,
   a:hover [link-mode]:not([class*="hv0"]), a:hover [class*="lm0"]:not([class*="hv0"])  {
-    --bg1: var(--bg1-hover); --bg1i: var(--bg1i-hover); --bg1b: var(--bg1b-hover);
-    --bg2: var(--bg2-hover); --bg2i: var(--bg2i-hover); --bg2b: var(--bg2b-hover);
-    --bg3: var(--bg3-hover); --bg3i: var(--bg3i-hover); --bg3b: var(--bg3b-hover);
-    --bg4: var(--bg4-hover); --bg4i: var(--bg4i-hover); --bg4b: var(--bg4b-hover);
-    --bg5: var(--bg5-hover); --bg5i: var(--bg5i-hover); --bg5b: var(--bg5b-hover);
-    --bg6: var(--bg6-hover); --bg6i: var(--bg6i-hover); --bg6b: var(--bg6b-hover);
+    --bg1: var(--bg1-hover); --bg1i: var(--bg1i-hover); --bg1b: var(--bg1b-hover); --bg1s: var(--bg1s-hover);
+    --bg2: var(--bg2-hover); --bg2i: var(--bg2i-hover); --bg2b: var(--bg2b-hover); --bg2s: var(--bg2s-hover);
+    --bg3: var(--bg3-hover); --bg3i: var(--bg3i-hover); --bg3b: var(--bg3b-hover); --bg3s: var(--bg3s-hover);
+    --bg4: var(--bg4-hover); --bg4i: var(--bg4i-hover); --bg4b: var(--bg4b-hover); --bg4s: var(--bg4s-hover);
+    --bg5: var(--bg5-hover); --bg5i: var(--bg5i-hover); --bg5b: var(--bg5b-hover); --bg5s: var(--bg5s-hover);
+    --bg6: var(--bg6-hover); --bg6i: var(--bg6i-hover); --bg6b: var(--bg6b-hover); --bg6s: var(--bg6s-hover);
     --fc1: var(--fc1-hover); --fc2: var(--fc2-hover); --fc3: var(--fc3-hover); 
     --fc4: var(--fc4-hover); --fc5: var(--fc5-hover); --fc6: var(--fc6-hover);
     --bc1: var(--bc1-hover); --bc2: var(--bc2-hover); --bc3: var(--bc3-hover);
@@ -119,12 +132,12 @@ body,
 /* active variables */
 [link-mode].is-active, [class*="lm0"].is-active,
 [link-mode].w--current, [class*="lm0"].w--current {
-  --bg1: var(--bg1-active); --bg1i: var(--bg1i-active); --bg1b: var(--bg1b-active);
-  --bg2: var(--bg2-active); --bg2i: var(--bg2i-active); --bg2b: var(--bg2b-active);
-  --bg3: var(--bg3-active); --bg3i: var(--bg3i-active); --bg3b: var(--bg3b-active);
-  --bg4: var(--bg4-active); --bg4i: var(--bg4i-active); --bg4b: var(--bg4b-active);
-  --bg5: var(--bg5-active); --bg5i: var(--bg5i-active); --bg5b: var(--bg5b-active);
-  --bg6: var(--bg6-active); --bg6i: var(--bg6i-active); --bg6b: var(--bg6b-active);
+  --bg1: var(--bg1-active); --bg1i: var(--bg1i-active); --bg1b: var(--bg1b-active); --bg1s: var(--bg1s-active);
+  --bg2: var(--bg2-active); --bg2i: var(--bg2i-active); --bg2b: var(--bg2b-active); --bg2s: var(--bg2s-active);
+  --bg3: var(--bg3-active); --bg3i: var(--bg3i-active); --bg3b: var(--bg3b-active); --bg3s: var(--bg3s-active);
+  --bg4: var(--bg4-active); --bg4i: var(--bg4i-active); --bg4b: var(--bg4b-active); --bg4s: var(--bg4s-active);
+  --bg5: var(--bg5-active); --bg5i: var(--bg5i-active); --bg5b: var(--bg5b-active); --bg5s: var(--bg5s-active);
+  --bg6: var(--bg6-active); --bg6i: var(--bg6i-active); --bg6b: var(--bg6b-active); --bg6s: var(--bg6s-active);
   --fc1: var(--fc1-active); --fc2: var(--fc2-active); --fc3: var(--fc3-active); 
   --fc4: var(--fc4-active); --fc5: var(--fc5-active); --fc6: var(--fc6-active);
   --bc1: var(--bc1-active); --bc2: var(--bc2-active); --bc3: var(--bc3-active);
