@@ -1,5 +1,5 @@
 /**
- * Lumos Color 1.0.1
+ * Lumos Color 1.0.2
  * Copyright 2023 Timothy Ricks
  * Released under the MIT License
  * Released on: July 30, 2023
@@ -15,6 +15,9 @@ a {
 *::selection { 
   background: var(--selection-bg);
   color: var(--selection-fc);
+}
+img::selection {
+  background: transparent;
 }
 body,
 [section-mode]:not([section-mode=""]), [class*="sm0"],
@@ -113,6 +116,8 @@ body,
 }
 /* hover variables */
 @media (pointer: fine) {
+  [card-mode]:not([class*="hv0"]):hover, [class*="cm0"]:not([class*="hv0"]):hover,
+  a:hover [card-mode]:not([class*="hv0"]), a:hover [class*="cm0"]:not([class*="hv0"]),
   [btn-mode]:not([class*="hv0"]):hover, [class*="bm0"]:not([class*="hv0"]):hover,
   a:hover [btn-mode]:not([class*="hv0"]), a:hover [class*="bm0"]:not([class*="hv0"]),
   [link-mode]:not([class*="hv0"]):hover, [class*="lm0"]:not([class*="hv0"]):hover,
@@ -130,6 +135,10 @@ body,
   }
 }
 /* active variables */
+[card-mode].is-active, [class*="cm0"].is-active,
+[card-mode].w--current, [class*="cm0"].w--current,
+[btn-mode].is-active, [class*="bm0"].is-active,
+[btn-mode].w--current, [class*="bm0"].w--current,
 [link-mode].is-active, [class*="lm0"].is-active,
 [link-mode].w--current, [class*="lm0"].w--current {
   --bg1: var(--bg1-active); --bg1i: var(--bg1i-active); --bg1b: var(--bg1b-active); --bg1s: var(--bg1s-active);
