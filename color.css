@@ -118,6 +118,8 @@ body,
 @media (pointer: fine) {
   [card-mode]:not([class*="hv0"]):hover, [class*="cm0"]:not([class*="hv0"]):hover,
   a:hover [card-mode]:not([class*="hv0"]), a:hover [class*="cm0"]:not([class*="hv0"]),
+  [element-mode]:not([class*="hv0"]):hover, [class*="em0"]:not([class*="hv0"]):hover,
+  a:hover [element-mode]:not([class*="hv0"]), a:hover [class*="em0"]:not([class*="hv0"]),
   [btn-mode]:not([class*="hv0"]):hover, [class*="bm0"]:not([class*="hv0"]):hover,
   a:hover [btn-mode]:not([class*="hv0"]), a:hover [class*="bm0"]:not([class*="hv0"]),
   [link-mode]:not([class*="hv0"]):hover, [class*="lm0"]:not([class*="hv0"]):hover,
@@ -135,12 +137,10 @@ body,
   }
 }
 /* active variables */
-[card-mode].is-active, [class*="cm0"].is-active,
-[card-mode].w--current, [class*="cm0"].w--current,
-[btn-mode].is-active, [class*="bm0"].is-active,
-[btn-mode].w--current, [class*="bm0"].w--current,
-[link-mode].is-active, [class*="lm0"].is-active,
-[link-mode].w--current, [class*="lm0"].w--current {
+.is-active :is([card-mode], [class*="cm0"], [element-mode], [class*="em0"], [btn-mode], [class*="bm0"], [link-mode], [class*="lm0"]),
+.w--current :is([card-mode], [class*="cm0"], [element-mode], [class*="em0"], [btn-mode], [class*="bm0"], [link-mode], [class*="lm0"]),
+:is([card-mode], [class*="cm0"], [element-mode], [class*="em0"], [btn-mode], [class*="bm0"], [link-mode], [class*="lm0"]).is-active,
+:is([card-mode], [class*="cm0"], [element-mode], [class*="em0"], [btn-mode], [class*="bm0"], [link-mode], [class*="lm0"]).w--current {
   --bg1: var(--bg1-active); --bg1i: var(--bg1i-active); --bg1b: var(--bg1b-active); --bg1s: var(--bg1s-active);
   --bg2: var(--bg2-active); --bg2i: var(--bg2i-active); --bg2b: var(--bg2b-active); --bg2s: var(--bg2s-active);
   --bg3: var(--bg3-active); --bg3i: var(--bg3i-active); --bg3b: var(--bg3b-active); --bg3s: var(--bg3s-active);
