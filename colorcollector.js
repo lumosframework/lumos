@@ -1,3 +1,10 @@
+/**
+ * Lumos ColorCollector 1.0.3
+ * Copyright 2023 Timothy Ricks
+ * Released under the MIT License
+ * Released on: August 11, 2023
+*/
+
 const sectionModes = {};
 let sectionModeTotal;
 let cardModeTotal;
