@@ -137,10 +137,10 @@ body,
   }
 }
 /* active variables */
-.is-active :is([card-mode], [class*="cm0"], [element-mode], [class*="em0"], [btn-mode], [class*="bm0"], [link-mode], [class*="lm0"]),
-.w--current :is([card-mode], [class*="cm0"], [element-mode], [class*="em0"], [btn-mode], [class*="bm0"], [link-mode], [class*="lm0"]),
-:is([card-mode], [class*="cm0"], [element-mode], [class*="em0"], [btn-mode], [class*="bm0"], [link-mode], [class*="lm0"]).is-active,
-:is([card-mode], [class*="cm0"], [element-mode], [class*="em0"], [btn-mode], [class*="bm0"], [link-mode], [class*="lm0"]).w--current {
+.is-active :is([card-mode]:not([card-mode=""]), [class*="cm0"], [element-mode]:not([element-mode=""]), [class*="em0"], [btn-mode]:not([btn-mode=""]), [class*="bm0"], [link-mode]:not([link-mode=""]), [class*="lm0"]),
+.w--current :is([card-mode]:not([card-mode=""]), [class*="cm0"], [element-mode]:not([element-mode=""]), [class*="em0"], [btn-mode]:not([btn-mode=""]), [class*="bm0"], [link-mode]:not([link-mode=""]), [class*="lm0"]),
+:is([card-mode]:not([card-mode=""]), [class*="cm0"], [element-mode]:not([element-mode=""]), [class*="em0"], [btn-mode]:not([btn-mode=""]), [class*="bm0"], [link-mode]:not([link-mode=""]), [class*="lm0"]).is-active,
+:is([card-mode]:not([card-mode=""]), [class*="cm0"], [element-mode]:not([element-mode=""]), [class*="em0"], [btn-mode]:not([btn-mode=""]), [class*="bm0"], [link-mode]:not([link-mode=""]), [class*="lm0"]).w--current {
   --bg1: var(--bg1-active); --bg1i: var(--bg1i-active); --bg1b: var(--bg1b-active); --bg1s: var(--bg1s-active);
   --bg2: var(--bg2-active); --bg2i: var(--bg2i-active); --bg2b: var(--bg2b-active); --bg2s: var(--bg2s-active);
   --bg3: var(--bg3-active); --bg3i: var(--bg3i-active); --bg3b: var(--bg3b-active); --bg3s: var(--bg3s-active);
