@@ -1,5 +1,5 @@
 /**
- * Lumos Layout 1.0.3
+ * Lumos Layout 1.0.4
  * Copyright 2023 Timothy Ricks
  * Released under the MIT License
  * Released on: July 30, 2023
@@ -115,6 +115,7 @@
 [class*="sp21"] { --col-start: 21; }
 [class*="sp22"] { --col-start: 22; }
 [class*="sp23"] { --col-start: 23; }
+[class*="sp24"] { --col-start: 24; }
 [class*="sp0"] { --col-start: auto; }
 /* order portrait */
 [class*="op1"] { order: -1; }
@@ -209,6 +210,7 @@
   [class*="sl21"] { --col-start: 21; }
   [class*="sl22"] { --col-start: 22; }
   [class*="sl23"] { --col-start: 23; }
+  [class*="sl24"] { --col-start: 24; }
   [class*="sl0"] { --col-start: auto; }
   /* order landscape */
   [class*="ol1"] { order: -1; }
@@ -304,6 +306,7 @@
   [class*="st21"] { --col-start: 21; }
   [class*="st22"] { --col-start: 22; }
   [class*="st23"] { --col-start: 23; }
+  [class*="st24"] { --col-start: 24; }
   [class*="st0"] { --col-start: auto; }
   /* order tablet */
   [class*="ot1"] { order: -1; }
@@ -399,6 +402,7 @@
   [class*="sd21"] { --col-start: 21; }
   [class*="sd22"] { --col-start: 22; }
   [class*="sd23"] { --col-start: 23; }
+  [class*="sd24"] { --col-start: 24; }
   [class*="sd0"] { --col-start: auto; }
   /* order desktop */
   [class*="od1"] { order: -1; }
