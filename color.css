@@ -20,11 +20,8 @@ img::selection {
   background: transparent;
 }
 body,
-[section-mode]:not([section-mode=""]), [class*="sm0"],
-[card-mode]:not([card-mode=""]), [class*="cm0"],
-[element-mode]:not([element-mode=""]), [class*="em0"],
-[btn-mode]:not([btn-mode=""]), [class*="bm0"],
-[link-mode]:not([link-mode=""]), [class*="lm0"] {
+[class*="sm0"], [class*="cm0"], [class*="em0"], [class*="bm0"], [class*="lm0"],
+:where([section-mode]:not([section-mode=""]), [card-mode]:not([card-mode=""]), [element-mode]:not([element-mode=""]), [btn-mode]:not([btn-mode=""]), [link-mode]:not([link-mode=""])) {
   background-color: var(--bg1);
   background-image: var(--bg1i);
   border-color: var(--bg1b);
